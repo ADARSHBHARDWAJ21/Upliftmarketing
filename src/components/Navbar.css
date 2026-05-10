@@ -12,11 +12,13 @@
   z-index: 1000;
 }
 
-/* FULL RECTANGULAR LOGO */
+/* Banner logo asset includes a dashed path + sparkle under the wordmark — crop bottom band */
 .full-logo {
-  height: 60px; /* adjust size here */
+  height: 60px;
   width: auto;
+  max-width: min(560px, 88vw);
   object-fit: contain;
+  clip-path: inset(0 1.5% 22% 0);
 }
 
 /* NAVIGATION MENU */
@@ -103,5 +105,6 @@
 
   .full-logo {
     height: 38px;
+    clip-path: inset(0 1% 24% 0);
   }
 }

@@ -29,7 +29,7 @@ export const portfolioItems = [
     category: 'Graphic Design',
     type: 'image',
     title: 'Ragini Vastu',
-    media: imageUrl('ragini4')
+    media: imageUrl('ragini4.png')
   },
   {
     id: 5,
@@ -43,34 +43,34 @@ export const portfolioItems = [
     category: 'Video Editing',
     type: 'video',
     title: 'Client Advertisement',
-    media: videoUrl('clientvideo1')
+    media: videoUrl('clientvideo1.mp4')
   },
   {
     id: 7,
     category: 'Video Editing',
     type: 'video',
     title: 'Restaurant Promotion',
-    media: videoUrl('clientvideo2')
+    media: videoUrl('clientvideo2.mp4')
   },
   {
     id: 8,
     category: 'Web Development',
     type: 'image',
     title: 'BELISA Website',
-    media: imageUrl('belisa')
+    media: imageUrl('belisa.jpg')
   },
   {
     id: 9,
     category: 'Web Development',
     type: 'image',
     title: 'Vajra Website',
-    media: imageUrl('vajra')
+    media: imageUrl('vajra.jpg')
   },
   {
     id: 10,
     category: 'Web Development',
     type: 'image',
     title: 'SKR Group Website',
-    media: imageUrl('skr')
+    media: imageUrl('skr.png')
   }
 ]

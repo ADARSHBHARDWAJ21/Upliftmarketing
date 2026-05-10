@@ -5,23 +5,28 @@ import { imageUrl, videoUrl } from './cloudinary.js';
 
 const FOLDER = 'uplift-site';
 
+/** Navbar logo public ID in Cloudinary (must match Media Library id, not alt text). */
+const HEADER_LOGO_PUBLIC_ID =
+  import.meta.env.VITE_CLOUDINARY_HEADER_LOGO || 'upplifft_a09dza';
+
 export const siteImages = {
-  headerLogo: imageUrl(`${FOLDER}/upplifft.png`),
-  heroAirplane: imageUrl(`${FOLDER}/airplane.png`),
+  headerLogo: imageUrl(HEADER_LOGO_PUBLIC_ID),
+  heroAirplane: imageUrl('airplane_ilalls.png'),
   whyTeam: imageUrl(`${FOLDER}/IMG_1314.PNG`)
 };
 
-/** Order matches titles in ClientWork.jsx */
-export const siteClientVideos = [
-  videoUrl(`${FOLDER}/Anushka-Mam-Reel-1-Color-Graded.mp4`),
-  videoUrl(`${FOLDER}/Edit-Swami-Vivekananda.mp4`),
-  videoUrl(`${FOLDER}/Gym-Product-Edit-Khushi-C1.mp4`),
-  videoUrl(`${FOLDER}/Harsh-Express-HR.mp4`),
-  videoUrl(`${FOLDER}/Product-10-H1-CTA-1-0.mp4`),
-  videoUrl(`${FOLDER}/Product-9-H2-CTA-2.mp4`),
-  videoUrl(`${FOLDER}/Smile-Gallery-3-TIPS.mp4`),
-  videoUrl(`${FOLDER}/Smile-Gallery-3rd-Oct-Final.mp4`),
-  videoUrl(`${FOLDER}/Sonal-Apsara-Natraj-Pencil.mp4`),
-  videoUrl(`${FOLDER}/TOT-Basic.mp4`),
-  videoUrl(`${FOLDER}/AdiBytes-61-Final.mp4`)
+/** Client Work section — only clips verified on Cloudinary */
+export const clientShowcaseVideos = [
+  {
+    title: 'BOLLYWOOD OBSESSION WITH NUMEROLOGY NUMBERS',
+    src: videoUrl('Product_9_H2_CTA_2_rh4d6v.mp4')
+  },
+  {
+    title: 'BUSINESS GROWTH TRICKS WITH NUMEROLOGY PART 1',
+    src: videoUrl('Smile_Gallery_3_TIPS_e8sewv.mp4')
+  },
+  {
+    title: 'VIDEO EDITING SHOWCASE',
+    src: videoUrl('AdiBytes_61_Final_qzce42.mp4')
+  }
 ];
