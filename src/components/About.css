@@ -1,0 +1,149 @@
+.about {
+  position: relative;
+  padding: 6rem 2rem;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-content {
+  z-index: 2;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #152f67;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+.about-text {
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #152f67;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #152f67 0%, #152f67 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(21, 47, 103, 0.4);
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1.25rem;
+  max-width: 520px;
+  justify-self: center;
+  width: 100%;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 150px;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(21, 47, 103, 0.25);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  filter: grayscale(0.3);
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #152f67;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #64748B;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}

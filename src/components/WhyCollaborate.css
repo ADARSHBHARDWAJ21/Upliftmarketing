@@ -1,0 +1,82 @@
+.why-collaborate {
+  padding: 6rem 2rem;
+  background: #ffffff;
+}
+
+.why-collaborate-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.why-collaborate-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1E40AF;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: 0.05em;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.benefit-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(96, 165, 250, 0.1) 100%);
+  border-radius: 12px;
+}
+
+.benefit-content {
+  flex: 1;
+}
+
+.benefit-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-description {
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .why-collaborate {
+    padding: 4rem 1rem;
+  }
+
+  .why-collaborate-title {
+    font-size: 2rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .benefit-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+

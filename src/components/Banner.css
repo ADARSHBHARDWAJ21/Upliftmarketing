@@ -1,0 +1,24 @@
+.banner {
+  background: linear-gradient(135deg, #152f67 0%, #152f67 100%);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.banner-text {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 1rem;
+  }
+
+  .banner-text {
+    font-size: 0.95rem;
+  }
+}
+

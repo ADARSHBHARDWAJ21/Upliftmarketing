@@ -1,0 +1,46 @@
+.hero {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hero-content {
+  width: 55%;
+}
+
+.highlight {
+  color: #ff6a3d;
+  font-weight: bold;
+}
+
+.cursor {
+  color: #ff6a3d;
+}
+
+.hero-right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .hero-airplane {
+  width: 420px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: -40px;
+} */
+.hero-airplane {
+  width: 70vw;    /* Responsive full width portion */
+  min-width: 600px;
+  max-width: 900px;
+  height: auto;
+  margin-top: -50px;
+}
